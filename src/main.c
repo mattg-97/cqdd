@@ -1,3 +1,4 @@
+#include "defines.h"
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <netinet/in.h>
@@ -16,7 +17,7 @@ static void client() {
   struct sockaddr_storage their_addr;
   socklen_t addr_size;
   struct addrinfo hints, *servinfo, *p;
-  int sock_fd, new_fd;
+  i32 sock_fd, new_fd;
 
   // initialize hints to 0
   memset(&hints, 0, sizeof hints);
